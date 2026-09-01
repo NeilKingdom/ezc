@@ -21,15 +21,16 @@ typedef double   f64;
 typedef ssize_t  isize;
 typedef size_t   usize;
 
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
 
 #define CLAMP_FLOOR(n, floor) ((n) < (floor) ? (floor) : (n))
-#define CLAMP_CEIL(n, ceil) ((n) > (ceil) ? (ceil) : (n))
+#define CLAMP_CEIL(n, ceil)   ((n) > (ceil) ? (ceil) : (n))
 
-#define SET_BIT(mask, bit) ((mask) |= (bit))
-#define UNSET_BIT(mask, bit) ((mask) &= ~(bit))
+#define SET_BIT(mask, bit)    ((mask) |= (bit))
+#define UNSET_BIT(mask, bit)  ((mask) &= ~(bit))
 #define IS_BIT_SET(mask, bit) (((mask) & (bit)) == (bit))
+#define TOGGLE_BIT(mask, bit) ((mask) ^= (bit))
 
 #define KB(n) ((n) * 1024)
 #define MB(n) ((n) * 1024 * 1024)

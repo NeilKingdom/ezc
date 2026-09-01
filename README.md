@@ -25,7 +25,7 @@ using git to clone the project, you can either navigate (i.e., cd) into the ezc 
 if you'd like to pull changes for the parent project plus ezc, you may run the following command:
 
 ```
-git pull --recurse-submodules
+git pull --recurse-submodules --remote
 ```
 
 ---
