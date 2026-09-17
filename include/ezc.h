@@ -23,7 +23,7 @@ typedef size_t   usize;
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
-#define CLAMP(min, max, n) (MIN((min), MAX((max), (n))))
+#define CLAMP(min, max, n) (MAX((min), MIN((max), (n))))
 
 #define SET_BIT(mask, bit)    ((mask) |= (bit))
 #define UNSET_BIT(mask, bit)  ((mask) &= ~(bit))
