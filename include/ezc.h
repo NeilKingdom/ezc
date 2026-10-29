@@ -5,8 +5,8 @@
 extern "C" {
 #endif
 
-#include "stdio.h"
 #include "stdint.h"
+#include <sys/types.h>
 
 typedef int8_t   i8;
 typedef uint8_t  u8;
