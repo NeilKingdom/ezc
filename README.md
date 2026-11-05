@@ -10,7 +10,7 @@
 # About
 
 "EZC" (Easy C) is a single header file that is intended to be included in other C/C++ projects as a submodule
-or basic dependency. It provides common typedefs and macros that I use in all of my C programs. The benefit of
+or basic dependency. It provides common typedefs and macros that I use in most of my C programs. The benefit of
 having EZC as an isolated interdependency is that I can put it under version control, meaning that any
 modifications can quickly be propagated to all projects that utilize it.
 
@@ -20,12 +20,16 @@ N/A
 
 # Usage
 
-Simply clone the repo within your existing project or copy contents of the ezc.h header file locally. If
-using git to clone the project, you can either navigate (i.e., cd) into the ezc submodule and run git pull, or
-if you'd like to pull changes for the parent project plus ezc, you may run the following command:
+Assuming you wish to include EZC as a submodule to an existing project, run the following command:
 
 ```
-git pull --recurse-submodules --remote
+git submodule add https://github.com/NeilKingdom/imgui.git <dst_dir>
+```
+
+To pull any changes that might have been made to EZC on the remote branch, run the following command:
+
+```
+git submodule update --init --remote --recursive
 ```
 
 ---
